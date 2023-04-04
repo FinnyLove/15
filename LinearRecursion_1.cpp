@@ -1,16 +1,12 @@
-https://freetuts.net/de-quy-tuyen-tinh-2946.html
-#include <iostream>
-using namespace std;
- 
-int factorial(int n){
-  if(n == 0) return 1; // điểm dừng của hàm, nếu n == 0 thì kết thúc hàm và trả về 1
-  return n * factorial(n-1);
-}
-//hàm main
-int main() {
-  int n;
-  cout<<"Nhập vào số giai thừa bạn muốn tính: ";
-  cin>>n;
-  int kq = factorial(n);//gọi hàm factorial() để tính giai thừa cho n và gán kết quả vào biến kq
-  cout<<"\nKết quả \n"<<n<<"! = "<<kq;
+//nguon: https://codelearn.io/learning/data-structure-and-algorithms/819552
+
+#include <stdio.h>
+
+int LinearSearch(int a[], int n, int x){
+	for(int i=0; i<n; i++){
+		if(a[i] == x){
+			return i;
+		}
+	}
+	return -1;
 }
